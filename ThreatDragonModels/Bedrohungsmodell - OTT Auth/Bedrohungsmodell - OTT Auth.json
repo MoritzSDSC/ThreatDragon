@@ -2874,7 +2874,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Report\nExport",
-              "description": "",
+              "description": "Exportiert die Logfiles, speist diese in das Bedrohungsmodell ein und leitet diese zum signieren weiter",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -3254,7 +3254,7 @@
             "data": {
               "type": "tm.Process",
               "name": "SIEM",
-              "description": "",
+              "description": "SIEM überwacht die 2FA und den Phone OTT Service",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
