@@ -882,57 +882,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "2. Weiterleitung\nTelefonnummer",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "isTrustBoundary": false
-            },
-            "labels": [
-              {
-                "attrs": {
-                  "label": {
-                    "text": "Erwarteter OTT"
-                  }
-                },
-                "position": 0.5
-              }
-            ],
-            "id": "63356151-e316-4a82-8224-9a7c729cfbee",
-            "source": {
-              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
-            },
-            "target": {
-              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "2b. Telefonanbieter",
               "description": "",
               "outOfScope": false,
@@ -1901,55 +1850,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Signierter\nExport",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Signierter\nExport"
-            ],
-            "id": "ff6f2f02-d000-4de2-a8c2-313b848666ce",
-            "source": {
-              "cell": "1aa4c2d5-6df7-4c90-a1db-c15d8d94ce2c"
-            },
-            "target": {
-              "cell": "e0eeb653-43ed-45d0-a609-a015838b8632",
-              "port": "31d9a0b8-14a6-49ca-9bf8-3508b1b0edb4"
-            },
-            "vertices": [
-              {
-                "x": 560,
-                "y": -240
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Signierter Log \nReport",
               "description": "",
               "outOfScope": false,
@@ -2031,6 +1931,187 @@
               {
                 "x": 237,
                 "y": 39
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Monitoring\nLogs",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Monitoring\nLogs"
+            ],
+            "id": "87432953-2a4c-4e26-9241-d5c3853d8afb",
+            "source": {
+              "cell": "ba739029-544f-49fa-8b41-624a3f9ca0ab"
+            },
+            "target": {
+              "cell": "d9ff066f-af22-4770-9e3a-aec2ca8053fb"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Monitoring\nLogs",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Monitoring\nLogs"
+            ],
+            "id": "44558466-5733-478c-a94d-d8d0333c611f",
+            "source": {
+              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
+            },
+            "target": {
+              "cell": "d9ff066f-af22-4770-9e3a-aec2ca8053fb"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Erwarteter\nOTT",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Erwarteter\nOTT"
+            ],
+            "id": "13db0e61-3cc4-4df0-9a2a-808a285d6663",
+            "source": {
+              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
+            },
+            "target": {
+              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
+            },
+            "vertices": [
+              {
+                "x": 480,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Exportierte\nLog-Daten",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Exportierte\nLog-Daten"
+            ],
+            "id": "ff6f2f02-d000-4de2-a8c2-313b848666ce",
+            "source": {
+              "cell": "1aa4c2d5-6df7-4c90-a1db-c15d8d94ce2c"
+            },
+            "target": {
+              "cell": "e0eeb653-43ed-45d0-a609-a015838b8632",
+              "port": "31d9a0b8-14a6-49ca-9bf8-3508b1b0edb4"
+            },
+            "vertices": [
+              {
+                "x": 600,
+                "y": -240
               }
             ]
           },
@@ -2652,7 +2733,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Krypto\nSoftware",
-              "description": "",
+              "description": "Kann mit hinterlegten Schlüsseln verschlüsseln und/oder signieren",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -2824,13 +2905,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2854,6 +2928,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -2937,7 +3012,6 @@
               ]
             },
             "id": "3a8d0f02-e909-4cd6-ae42-4c0b339c11a5",
-            "zIndex": 17,
             "data": {
               "type": "tm.Actor",
               "name": "Management",
@@ -2973,6 +3047,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -3056,7 +3131,6 @@
               ]
             },
             "id": "c370928c-511d-47d1-82ad-454a833448f1",
-            "zIndex": 18,
             "data": {
               "type": "tm.Store",
               "name": "Bedrohungs-\nmodell",
@@ -3074,8 +3148,8 @@
           },
           {
             "position": {
-              "x": 590,
-              "y": 153
+              "x": 600,
+              "y": 158
             },
             "size": {
               "width": 130,
@@ -3093,6 +3167,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 19,
             "ports": {
               "groups": {
                 "top": {
@@ -3176,7 +3251,6 @@
               ]
             },
             "id": "d9ff066f-af22-4770-9e3a-aec2ca8053fb",
-            "zIndex": 19,
             "data": {
               "type": "tm.Process",
               "name": "SIEM",
