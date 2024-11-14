@@ -149,8 +149,8 @@
                 "text": "Login System -\nWebapp +\nMobile App"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -264,18 +264,18 @@
                 {
                   "id": "6ee2f247-4194-4918-9219-3548d7ed3b91",
                   "title": "Admin Login",
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "Mitigated",
+                  "severity": "High",
                   "type": "Elevation of privilege",
                   "description": "Ein Angreifer kann nach Login durch Misskonfiguration Adminseiten einsehen und sieht Kundendaten\n\nCAPEC-180: Exploiting Incorrectly Configured Access Control Security Levels\n\nATT&CK: T1098.003: Additional Cloud Roles\n\nD: 10 / R: 10 / E: 8 / A: 10 / DREA: 38",
                   "mitigation": "Bevor Prozesse welche auf Admins beschränkt sind, muss geprüft werden ob es sich bei dem User um einen Admin handelt\n\nD: 10/R: 10/E: 0/A: 10/DREA: 30\nD3-SCP: System Configuration Permissions",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 104,
-                  "score": ""
+                  "score": "30"
                 }
               ],
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isWebApplication": null,
               "handlesCardPayment": null,
               "handlesGoodsOrServices": null,
@@ -285,7 +285,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 10
+                "elevationOfPrivilege": 11
               }
             }
           },
@@ -303,8 +303,8 @@
                 "text": "2-Faktor-Authe\nntifizierungsdi\nenst"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -405,18 +405,18 @@
                 {
                   "id": "661134ab-4cba-4b23-b7a6-e58d0f56531a",
                   "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Tampering",
                   "description": "Ein Angreifer manipuliert die Auth Challenge so, dass die 2FA diese als bestanden wertet und Zugriff auf einen anderen Account.\nAngriffsvektor:\nDer Angreifer kann sich ohne valide Daten authentifizieren\n\t\t\nCAPEC-272: Protocol Manipulation\nATT&CK: T1649: Steal or Forge Authentication Certificates\n\nD: 10 / R: 1 / E: 1 / A: 2 / DREA: 14",
                   "mitigation": "Es wird die normale IPs Adresse gespeichert, sollte eine Anomalie erkannt werden dann wird diese überprüft \nD: 2 / R: 1 / E: 1 / A: 1 / DREA: 5\nD3-IPRA: IP Reputation Analysis",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 106,
-                  "score": ""
+                  "score": "5"
                 }
               ],
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -426,7 +426,7 @@
               "isWebApplication": null,
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 13,
+                "tampering": 14,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -2498,8 +2498,8 @@
                 "text": "Allsecure Mobile \nPhone OTT \nService"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -2595,7 +2595,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -2604,15 +2604,15 @@
                 {
                   "id": "b47998a6-0f2e-48da-bd3f-83112e624924",
                   "title": "New STRIDE threat",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "Ein Angreifer provoziert fehlerhafte Anfragen auf den Service, weshalb richtige OTT Anfragen nicht verarbeitet werden können\n\nCAPEC-490: Amplification\nATT&CK: T1499.003: Endpoint Denial of Service: Application Exhaustion Flood\n\nD: 6 / R: 10 / E: 8 / A: 10 / DREA: 34",
-                  "mitigation": "Überprüfen der eigehenden Nachrichten auf vom Protokoll abweichende Anfragen\nD: 6 / R: 10 / E: 0 / A: 10 / DREA: 26\nD3-CSPP: Client-server Payload Profiling",
+                  "mitigation": "Überprüfen der eigehenden Nachrichten auf vom Protokoll abweichende Anfragen\nD: 6 / R: 10 / E: 0 / A: 10 / DREA: 26\nD3-CSPP: Client-server Payload Profiling\nASVS V5.1.4 Input Validation",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 108,
-                  "score": ""
+                  "score": "26"
                 }
               ],
               "threatFrequency": {
@@ -2620,7 +2620,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 7,
+                "denialOfService": 10,
                 "elevationOfPrivilege": 0
               }
             }
@@ -2639,8 +2639,8 @@
                 "text": "Krypto\nSoftware"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -2736,7 +2736,7 @@
               "description": "Kann mit hinterlegten Schlüsseln verschlüsseln und/oder signieren",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -2745,19 +2745,19 @@
                 {
                   "id": "312fd6f7-9dda-4eeb-833e-7d5c121d099f",
                   "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Spoofing",
                   "description": "MITM kann Telefonnummern spoofen, er bricht den Key des Kryptosystems und kann somit die Kommunikation mit dem API-Gateway kontrollieren\n\nCAPEC-384: Application API Message Manipulation via Man-in-the-Middle\nATT&CK: T1071.001: Application Layer Protocol: Web Protocols\n\nD: 8/R: 10/E: 1/A: 4/ DREA: 23",
                   "mitigation": "Die Schlüssel werden regelmäßig gewechselt und die alten widerrufen\nD: 8/R: 1/E: 1/A: 4/ DREA: 14\nD3-CRO: Credential Rotation",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 105,
-                  "score": ""
+                  "score": "14"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 8,
+                "spoofing": 9,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -2780,8 +2780,8 @@
                 "text": "Report\nExport"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -2877,7 +2877,7 @@
               "description": "Exportiert die Logfiles, speist diese in das Bedrohungsmodell ein und leitet diese zum signieren weiter",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -2886,7 +2886,7 @@
                 {
                   "id": "5aa65a90-f9bf-45e6-bc8c-a8ad16548b83",
                   "title": "New STRIDE threat",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Angreifer kann Logs ohne Zugriffskontrolle einsehen.\nAngriffsvektor:\nAngreifer kann mittels Fuzzing API-Endunkte oder Ports finden um die darunterliegende Datenbank zu iterieren.\n\nCAPEC-28: Fuzzing\nT1190: Exploit Public-Facing Application\n\nD: 8 / R: 10 / E: 7 / A: 10 / DREA: 35",
@@ -2894,14 +2894,14 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 109,
-                  "score": ""
+                  "score": "18"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 1,
                 "repudiation": 0,
-                "informationDisclosure": 5,
+                "informationDisclosure": 6,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
@@ -3160,8 +3160,8 @@
                 "text": "SIEM"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -3257,7 +3257,7 @@
               "description": "SIEM überwacht die 2FA und den Phone OTT Service",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -3266,21 +3266,21 @@
                 {
                   "id": "3a133e3e-79c1-483a-8f06-f8ec75acb69b",
                   "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Repudiation",
                   "description": "Bestimmte Anfragen werden nicht vom SIEM überprüft, wodurch ein potentieller Angreifer seine Aktivitäten verschleiern kann.\nAngriffsvektor:\nDas SIEM System ist für bestimmte Formatierungen falsch konfiguriert, wodurch diese Pakete nicht geprüft oder geloggt werden.\n\nCAPEC-267: Leverage Alternate Encoding\nT1027.013: Encrypted/ Encoded File\n\nD: 3 / R: 10 / E: 3 / A: 1 / DREA: 17",
                   "mitigation": "Das SIEM wird auf die restlichen Arten von Formatierungen wird über prüft\nD: 3 / R: 10 / E: 0 / A: 1 / DREA: 14\nD3-ACH: Application Configuration Hardening",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 107,
-                  "score": ""
+                  "score": "14"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
-                "repudiation": 7,
+                "repudiation": 8,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
