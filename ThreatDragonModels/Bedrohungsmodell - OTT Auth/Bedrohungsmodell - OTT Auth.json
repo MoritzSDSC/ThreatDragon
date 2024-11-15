@@ -284,7 +284,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 0,
+                "denialOfService": 1,
                 "elevationOfPrivilege": 11
               }
             }
@@ -404,7 +404,7 @@
               "threats": [
                 {
                   "id": "661134ab-4cba-4b23-b7a6-e58d0f56531a",
-                  "title": "New STRIDE threat",
+                  "title": "Manipulated Auth Challenge",
                   "status": "Mitigated",
                   "severity": "Low",
                   "type": "Tampering",
@@ -426,7 +426,7 @@
               "isWebApplication": null,
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 14,
+                "tampering": 16,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -2603,7 +2603,7 @@
               "threats": [
                 {
                   "id": "b47998a6-0f2e-48da-bd3f-83112e624924",
-                  "title": "New STRIDE threat",
+                  "title": "Malformed packages ",
                   "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Denial of service",
@@ -2620,7 +2620,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 10,
+                "denialOfService": 11,
                 "elevationOfPrivilege": 0
               }
             }
@@ -2744,7 +2744,7 @@
               "threats": [
                 {
                   "id": "312fd6f7-9dda-4eeb-833e-7d5c121d099f",
-                  "title": "New STRIDE threat",
+                  "title": "Using numbers for identy theft after corrupting the crypto sw",
                   "status": "Mitigated",
                   "severity": "Low",
                   "type": "Spoofing",
@@ -2757,7 +2757,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 9,
+                "spoofing": 10,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -2885,12 +2885,12 @@
               "threats": [
                 {
                   "id": "5aa65a90-f9bf-45e6-bc8c-a8ad16548b83",
-                  "title": "New STRIDE threat",
+                  "title": "Endpunkt aufrufbar",
                   "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Angreifer kann Logs ohne Zugriffskontrolle einsehen.\nAngriffsvektor:\nAngreifer kann mittels Fuzzing API-Endunkte oder Ports finden um die darunterliegende Datenbank zu iterieren.\n\nCAPEC-28: Fuzzing\nT1190: Exploit Public-Facing Application\n\nD: 8 / R: 10 / E: 7 / A: 10 / DREA: 35",
-                  "mitigation": "Es werden alle Zugriffe auf diesen Endpunkt blockiert\nD: 8 / R: 0 / E: 0 / A: 10 / DREA: 18\nD3-ITF: Inbound Traffic Filtering\n",
+                  "mitigation": "Es werden alle Zugriffe auf diesen Endpunkt blockiert\nD: 8 / R: 1 / E:1 / A: 10 / DREA: 18\nD3-ITF: Inbound Traffic Filtering\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 109,
@@ -2901,7 +2901,7 @@
                 "spoofing": 0,
                 "tampering": 1,
                 "repudiation": 0,
-                "informationDisclosure": 6,
+                "informationDisclosure": 8,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
@@ -3134,12 +3134,12 @@
             "data": {
               "type": "tm.Store",
               "name": "Bedrohungs-\nmodell",
-              "description": "",
+              "description": "Standard-Krypto!!!",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isALog": false,
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
@@ -3265,7 +3265,7 @@
               "threats": [
                 {
                   "id": "3a133e3e-79c1-483a-8f06-f8ec75acb69b",
-                  "title": "New STRIDE threat",
+                  "title": "Missing Logs for certain actions",
                   "status": "Mitigated",
                   "severity": "Low",
                   "type": "Repudiation",
@@ -3280,7 +3280,7 @@
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
-                "repudiation": 8,
+                "repudiation": 9,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
